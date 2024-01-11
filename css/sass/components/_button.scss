@@ -1,0 +1,59 @@
+.header-btn {
+    padding: 14px 27px;
+    border : solid 2px $button-background-color !important;
+    border-radius: 27px;
+    font-weight: 600;
+    max-width: fit-content !important;
+    display: block;
+    cursor: pointer;
+    transition: $main-transition;
+    background-color: $button-background-color;
+    @media (max-width: 1115px) {
+    margin: 0 auto;
+    font-size: 15px;
+        }
+    a {
+        color: #fff !important;
+    }
+    i {
+        margin-left: 10px;
+    }
+    &:hover {
+        background-color: #0d9eca
+    }
+    &:hover {
+        i {
+            color: #fff;
+        }
+    }
+    &:hover {
+        a {
+            color: #fff !important;
+        }
+    }
+}
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn {
+    background-color: $button-background-color;
+    color: $button-text-color;
+    font-size: $button-size-font-size;
+    margin-top: $button-size-margin-top;
+    height: $button-size-height;
+    border-radius: $button-border-radius;
+    min-width: 150px;
+    max-width: 200px;
+    padding: 0 14px;
+    text-align: center;
+    line-height: $button-size-height;
+    cursor: pointer;
+    transition: $main-transition;
+    &:hover {
+        transform: translateY(-6px);
+        @include prefixer(box-shadow, 3px 20px 20px 2px rgba(0, 0, 0, 0.3), ms o)
+    }
+}

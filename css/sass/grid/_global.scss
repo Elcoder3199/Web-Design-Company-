@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    @media (max-width: 650px) {
+    font-size: 70%;
+    }
+}
+
+.section {
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-bottom;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}

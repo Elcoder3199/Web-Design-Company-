@@ -1,0 +1,84 @@
+/* Start Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    min-height: 80px;
+    .menu-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+        @media (max-width: 1115px) {
+            display: block;
+        }
+        i {
+            font-size: 26px;
+            cursor: pointer;
+            color: #444;
+        }
+    }
+    &.scroll {
+        @include prefixer(box-shadow, 0 0 30px 0 rgba(0, 0, 0, 0.2), ms o);
+    }
+    .logo {
+        width: 161px;
+    }
+    ul.links {
+        transition: 0.5s linear;
+        display: flex;
+        align-items: center;
+        .close-menu {
+            position: absolute;
+            right: 30px;
+            cursor: pointer;
+            display: none;
+            @media (max-width: 1115px) {
+                display: block;
+            }
+            i {
+                font-size: 25px;
+                color: #f77;
+            }
+        }
+        @media (max-width: 1115px) {
+            display: block;
+            width: 100vw;
+            min-height: 100vh;
+            background-color: #fff;
+            position: absolute;
+            top: 20%;
+            left: 5;
+            text-align: center;
+            opacity: 0;
+            top: -130vh;
+            &.open {
+                opacity: 1;
+                top: 20%;
+            }
+        }
+        li {
+            z-index: 999;
+            padding: 0 15px;
+            &:nth-child(7) {
+                border-right: solid 2px #777;
+            }
+            a {
+                @media (max-width: 1115px) {
+                    line-height: 3.4;
+                }
+                color: #333;
+                transition: $main-transition;
+                &:hover {
+                    color: $main-color !important;
+                }
+            }
+        }
+        .logo {
+            width: 200px;
+        }
+    }
+}
+/* End Header */
