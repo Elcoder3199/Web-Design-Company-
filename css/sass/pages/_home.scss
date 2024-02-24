@@ -4,21 +4,27 @@
   background-color: $main-color;
   margin-top: 100px;
   position: relative;
+
   .container {
     .content-landing-page {
       line-height: 1.8;
       max-width: 100%;
+
       h1 {
-        font-size : 57px;
+        font-size: 57px;
+
         @media (max-width: 767px) {
           font-size: 40px;
         }
+
         @media (max-width: 460px) {
           font-size: 30px;
         }
       }
+
       ul {
         margin: 20px 0;
+
         li {
           i {
             margin-right: 10px;
@@ -28,13 +34,16 @@
         }
       }
     }
+
     .image-landing-page {
       width: 700px;
+
       img {
         @media (max-width: 767px) {
           margin: 20px auto;
           max-width: 80%;
         }
+
         @media (max-width: 460px) {
           max-width: 60% !important;
           transform: translateX(-20px);
@@ -43,6 +52,7 @@
     }
   }
 }
+
 /* End Landing */
 
 /* Start Found Us */
@@ -50,25 +60,33 @@
   .container {
     display: flex;
     align-items: center;
+
     .image-found-us {
       width: 50vw;
+
       @media (max-width: 990px) {
         width: 80vw;
       }
+
       img {
         width: 100%;
       }
     }
+
     .content-found-us {
       line-height: 2;
+
       h4 {
         color: $main-color;
       }
+
       h1 {
         margin: 10px 0;
+
         @media (max-width: 767px) {
           font-size: 24px;
         }
+
         @media (max-width: 460px) {
           font-size: 18px;
         }
@@ -76,22 +94,26 @@
     }
   }
 }
+
 /* Start how it work */
 .how-it-work {
   .container {
     .title-section {
       word-spacing: 5px;
       line-height: 2.5;
+
       h4 {
         color: $main-color;
       }
     }
+
     .icon-box {
       i {
         font-size: 70px;
         color: $main-color;
       }
     }
+
     .content-how-it-work {
       h2 {
         margin: 10px 0;
@@ -100,33 +122,41 @@
     }
   }
 }
+
 /* End how it work */
 /* Start quality design  */
 .quality-design {
   .container {
     .content-quality-design {
       line-height: 2;
+
       h4 {
         color: $main-color;
       }
+
       h1 {
         font-size: 40px;
       }
+
       .para {
         max-width: 90%;
       }
     }
+
     .image-quality-dsign {
       width: 500px;
+
       @media (max-width: 460px) {
         width: 300px;
       }
+
       @media (max-width: 340px) {
         width: 240px;
       }
     }
   }
 }
+
 /* End quality design  */
 
 /* Start Bespoke  */
@@ -134,10 +164,12 @@
   .container {
     @include prefixer(box-shadow, 3px 5px 6px 4px rgba(0, 0, 0, 0.1), o ms);
     padding: 20px;
+
     .content-bespoke {
       p {
         width: 96%;
       }
+
       .main-btn {
         position: relative;
         left: 50%;
@@ -147,6 +179,7 @@
     }
   }
 }
+
 /* End Bespoke  */
 /* start faq */
 .faq {
@@ -156,6 +189,7 @@
         border-bottom: 1px solid #ddd;
         margin: 14px 0;
         padding: 20px 0;
+
         li {
           color: $main-color;
           font-size: 30px;
@@ -165,20 +199,24 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           @media (max-width: 540px) {
             font-size: 20px;
           }
+
           &.active {
             i {
               transform: rotate(180deg);
             }
           }
+
           i {
             float: right;
             transition: $main-transition;
             font-size: 19px;
           }
         }
+
         .detalis {
           margin: 20px 7px;
           font-size: 17px;
@@ -189,6 +227,7 @@
     }
   }
 }
+
 /* End faq */
 
 /* Start elementor */
@@ -198,6 +237,7 @@
       max-width: 1110px;
       width: 100%;
       position: relative;
+
       .icon {
         width: 50px;
         height: 50px;
@@ -210,43 +250,54 @@
         font-weight: 500;
         transform: translateY(-60%);
         color: $main-color;
+
         &:first-child {
           left: -40px;
+
           @media (max-width: 776px) {
             left: -30px;
+          }
         }
-        }
+
         &:last-child {
           right: -34px;
+
           @media (max-width: 776px) {
             right: -23px;
-        }
+          }
         }
       }
+
       .carousel {
         display: grid;
         grid-auto-flow: column;
         gap: 16px;
         grid-auto-columns: calc((100% / 4) - 12px);
         overflow: hidden;
+
         @media (max-width: 1000px) {
-            grid-auto-columns: calc((100% / 3) - 12px);
+          grid-auto-columns: calc((100% / 3) - 12px);
         }
+
         @media (max-width: 776px) {
-            grid-auto-columns: calc((100% / 2) - 12px);
+          grid-auto-columns: calc((100% / 2) - 12px);
         }
+
         @media (max-width: 776px) {
-            grid-auto-columns: calc(100% - 12px);
+          grid-auto-columns: calc(100% - 12px);
         }
+
         &:where(.card, .img) {
           display: flex;
         }
+
         &.dragging {
           .card {
             cursor: grab;
             user-select: none;
           }
         }
+
         .card {
           list-style: none;
           background-color: #fff;
@@ -258,6 +309,7 @@
           transition: $main-transition;
           overflow: hidden;
         }
+
         .img {
           background-color: #bb53ff;
           width: calc(100% + 15px);
@@ -265,6 +317,7 @@
           position: relative;
           left: -10px;
           top: -6px;
+
           img {
             width: 100%;
             height: 100%;
@@ -272,6 +325,7 @@
             border: 4px solid #fff;
           }
         }
+
         .elementor-inline-items {
           display: flex;
           justify-content: space-around;
@@ -279,29 +333,36 @@
           padding: 10px 0;
           border-bottom: 1px solid #ddd;
         }
+
         .elementor-items {
           font-size: 14px;
+
           i {
             font-size: 16px;
           }
         }
+
         .elementor-heading-title {
           padding: 8px 10px;
           margin: 0;
           text-align: left;
           font-size: 18px;
         }
+
         .elementor-link {
           padding: 4px 10px;
+
           i {
             font-size: 14px;
           }
         }
       }
+
       &.dragging {
         scroll-behavior: auto;
       }
     }
   }
 }
+
 /* End elementor */
